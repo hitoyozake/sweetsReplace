@@ -1,0 +1,16 @@
+{
+	"name" : "Child makes Sweets",
+	"description" : "お菓子作りを子作りに置換するフィルタ",
+	"version" : "1.0.0",
+	"manifest_version" : 2,
+	
+	"content_scripts" :
+	[
+		{
+			"js" : ["jquery.min.js", "sweetReplace.js" ],
+			"matches" : [ "http://*/*", "https://*/*" ],
+			"run_at" : "document_start"
+		}
+	]
+
+}
